@@ -1,0 +1,31 @@
+<div class="container" *ngIf="incomingData && incomingData.action !== 'delete'">
+    <div class="row form-title">
+        <h2>Add User</h2>
+    </div>
+    <div class="row">
+        <form class="example-form" [formGroup]="addUserForm" (ngSubmit)="addUser()">
+            <div class="example-full-width">
+                <label for="firstName">First Name</label><br>
+                <input id="firstName" type="text" formControlName="firstName">
+            </div>
+            <div class="example-full-width">
+                <label for="lastName">Last Name</label><br>
+                <input id="lastName" type="text" formControlName="lastName">
+            </div>
+            <div class="example-full-width">
+                <label for="email">Email</label><br>
+                <input id="email" type="email" formControlName="email">
+            </div>
+            <div class="example-full-width">
+                <label for="contact">Contact</label><br>
+                <input id="contact" type="text" formControlName="contact">
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-warning" (click)="closePopup()">CANCEL</button>
+                <button type="submit" class="btn btn-success" [disabled]="addUserForm.invalid">SAVE</button>
+            </div>
+            
+        </form>
+    </div>
+    
+</div>

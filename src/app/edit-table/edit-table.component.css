@@ -1,0 +1,57 @@
+/* Add this CSS to your component's stylesheet */
+
+.container {
+    position: fixed;
+    top: 50%;
+    width: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    /* Make sure it's on top of other elements */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    /* Make sure it's below the container but above other elements */
+}
+
+input {
+    height: 25px;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 1em;
+}
+
+.example-full-width {
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    width: 35%;
+    padding: 10px;
+    font-size: 16px;
+    /* height: 35px; */
+    margin-left: 17px;
+    border: none;
+}
+
+
+label {
+    font-weight: 300;
+}
